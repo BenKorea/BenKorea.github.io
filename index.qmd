@@ -1,0 +1,35 @@
+---
+title: Machine learning-based prediction model using clinico-pathologic factors for papillary thyroid carcinoma recurrence
+authors:
+  - name: Byung Il Kim
+    affiliation: Department of Nuclear Medicine Korea Cancer Center Hospital the Korea Institute of Radiological and Medical Sciences
+    roles: writing
+    corresponding: true
+bibliography: references.bib
+---
+
+## **Abstract**
+
+## **Introduction**
+
+## **Materials and methods**
+
+This study was approved by the Institutional Review Board (IRB) of KIRAMS [@knuth84]. Informed consent was not obtained from any participants because the IRB waived the need for individual informed consent. This retrospective research was performed in accordance with the Declaration of Helsinki. Medical data of patients diagnosed and treated for PTC at KIRAMS from 2003 to 2017 were analyzed retrospectively. We included patients who were diagnosed with PTC and underwent total thyroidectomy and central neck dissection with/without lateral neck dissection. We excluded (1) cases with a distant metastasis at the time of diagnosis, (2) patients who received previous surgery or radiotherapy to the head and neck area, and (3) cases with insufficient clinical data that were lost to follow-up after surgery. Finally, ? patients were included in the study, including ? males and ? females. Their ages ranged from 13 to 79 years and the mean age was ? years. Tumor stage was classified according to the 8th AJCC staging system.
+
+To detect disease recurrence, all patients underwent physical examination, ultrasound, and thyroglobulin measurement every 6–24 months after surgery. If necessary, additional imaging studies such as computed tomography, whole body iodine scan, and positron emission tomography were performed. Recurrence was defined as a case in which a new lesion was detected that was not previously observed in the imaging studies and which was pathologically confirmed through fine needle aspiration cytology.
+
+Tumor size, ETE, multiplicity, ENE, and TNM stage were analyzed. The surgical specimens from central neck dissection were divided into ipsilateral and contralateral areas according to the location of the tumor, and therein the number of metastatic LNs and the total number of harvested LNs were recorded. LNR was calculated by dividing the number of metastatic LNs by the total number of harvested LNs. The cut-off value of LNR was determined in consideration of optimized sensitivity and specificity for predicting disease recurrence using receiver operating characteristic curves (ROC). The optimal value of LNR was used to construct machine learning models for predicting disease recurrences.
+
+Machine learning was performed based on the supervised learning method, and a variety of machine learning models was used including the decision tree, random forest, XGBoost, and LightGBM, and Stacking models. Learning was performed with the five models mentioned above, and accuracy was used to evaluate model performance. Scikit-learn version 12.3 was used for model building and learning. 80% of the data set was classified as the training set and was used for learning, and the remaining 20% was used as a test set. To account for selection bias, the five-fold-cross-validation technique was applied.
+
+Patient clinical information, pathologic information, recurrence, and cause of recurrence were analyzed. The Chi-square or independent two-sample t-test were used to evaluate differences in variables between two independent groups. The multivariate Cox proportional hazards regression model was used to evaluate the effect of several variables on disease recurrence. *p* values \< 0.05 were considered indicative of statistical significance. Statistical analyses were performed using python 3.8 version and SPSS version 25.0 for Windows (SPSS, Chicago, IL).
+
+## **Results**
+
+## **Discussion**
+
+## 
+
+```{r}
+1 + 1
+```
