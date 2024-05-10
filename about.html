@@ -108,13 +108,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#연속형변수의-범주화" id="toc-연속형변수의-범주화" class="nav-link active" data-scroll-target="#연속형변수의-범주화"><strong>1. 연속형변수의 범주화</strong></a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -138,13 +132,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="연속형변수의-범주화" class="level3">
-<h3 class="anchored" data-anchor-id="연속형변수의-범주화"><strong>1. 연속형변수의 범주화</strong></h3>
-<p>https://rpubs.com/cardiomoon/84975</p>
-<p>연속형변수의 생존을 비교할때 생존에 차이가 나는 cutpoint 를 구해 cutpoint를 이용해 두개의 군으로 나누어 비교한 그래프를 그리고 싶다. 먼저 cutpoint를 결정하는 것은 maxstat 패키지의 maxstat.test() 를 이용하거나 party package의 ctree()를 이용할 수 있는데 maxstat.text를 이용하면 다음과 같다.</p>
+<ol type="1">
+<li></li>
+</ol>
+<p>EMR로부터 다운로드하거나 연구가가 작성한 자료는 주로 엑셀파일형태인데 이를 R에서 data.table로 읽어오면 엑셀에서 자료형태를 지정해 두었더라도 달라질 수 있다. 생존분석을 위해서는 data.table로 읽어온 뒤 컬럼별로 적절치 못한 숫자형(연속형변수)이나 문자형(범주형변수)을 수정해야 한다.</p>
+<p>연속형변수의 생존분석을 위해서는 2분화가 일반적인데 cut-off를 결정하기 위해서 문건웅선생님의 기술에 따르면 cutpoint를 결정하는 것은 maxstat 패키지의 maxstat.test() 를 이용하거나 party package의 ctree()를 이용할 수 있는데 maxstat.text를 이용하면 다음과 같다.</p>
+<p>웹에서 하는 R통계(web-r.org)에서는 이와 같은 방법으로 생존분석을 자동화하여 연속형변수는 cutpoint를 구해 자동으로 그래프를 그려준다. 또한 여러개의 변수를 영향변수(독립변수)로 넣어주면 각각의 변수에 대한 Cox비례위험 모형 및 각각의 survival curve를 그려주고 다변량 분석 및 stepwise backward elemination 까지 한번 입력으로 얻을 수 있으며 그 결과를 html또는 pdf로 다운받을 수 있고 그래프도 고해상도로 다운 받을 수 있다.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
