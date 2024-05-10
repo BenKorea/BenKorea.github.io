@@ -9,8 +9,8 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "R생존분석",
     "section": "",
-    "text": "About this site"
+    "text": "1. 연속형변수의 범주화\nhttps://rpubs.com/cardiomoon/84975\n연속형변수의 생존을 비교할때 생존에 차이가 나는 cutpoint 를 구해 cutpoint를 이용해 두개의 군으로 나누어 비교한 그래프를 그리고 싶다. 먼저 cutpoint를 결정하는 것은 maxstat 패키지의 maxstat.test() 를 이용하거나 party package의 ctree()를 이용할 수 있는데 maxstat.text를 이용하면 다음과 같다."
   }
 ]
