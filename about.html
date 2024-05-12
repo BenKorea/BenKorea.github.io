@@ -132,11 +132,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ol type="1">
-<li></li>
-</ol>
-<p>EMR로부터 다운로드하거나 연구가가 작성한 자료는 주로 엑셀파일형태인데 이를 R에서 data.table로 읽어오면 엑셀에서 자료형태를 지정해 두었더라도 달라질 수 있다. 생존분석을 위해서는 data.table로 읽어온 뒤 컬럼별로 적절치 못한 숫자형(연속형변수)이나 문자형(범주형변수)을 수정해야 한다.</p>
-<p>연속형변수의 생존분석을 위해서는 2분화가 일반적인데 cut-off를 결정하기 위해서 문건웅선생님의 기술에 따르면 cutpoint를 결정하는 것은 maxstat 패키지의 maxstat.test() 를 이용하거나 party package의 ctree()를 이용할 수 있는데 maxstat.text를 이용하면 다음과 같다.</p>
+<p>EMR로부터 다운로드하거나 연구가가 작성한 자료는 주로 엑셀파일형태이다. 이를 R로 읽어오면 엑셀에서 각 컬럼별로 자료형태를 지정해 두었더라도 달라질 수 있어 적절한 숫자형(연속형변수)이나 문자형(범주형변수)으로 수정해야 한다.</p>
+<p>연속형변수의 생존분석을 위해서는 2분화가 일반적인데 cut-off를 결정하기 위해 ROC 분석보다는 maxstat 패키지의 maxstat.test()를 이용한다. (https://rpubs.com/cardiomoon/84975)</p>
+<p>비례위험가정과 log-rank test에서의 유의성 확인을 위해 Kaplan-Meier plot를 그린다. ’survminer’패키지의 ’ggsurvplot’함수</p>
+<p>Cox 단변량 다변량분석을 한다.</p>
 <p>웹에서 하는 R통계(web-r.org)에서는 이와 같은 방법으로 생존분석을 자동화하여 연속형변수는 cutpoint를 구해 자동으로 그래프를 그려준다. 또한 여러개의 변수를 영향변수(독립변수)로 넣어주면 각각의 변수에 대한 Cox비례위험 모형 및 각각의 survival curve를 그려주고 다변량 분석 및 stepwise backward elemination 까지 한번 입력으로 얻을 수 있으며 그 결과를 html또는 pdf로 다운받을 수 있고 그래프도 고해상도로 다운 받을 수 있다.</p>
 
 
